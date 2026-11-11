@@ -1,6 +1,7 @@
-# Science Fair Intro — downloads
+# World Science Day Intro — downloads
 
-Download page for the Science Fair 2026 intro (Al Risala School): https://science-fair-downloads.vercel.app
+Download page for the World Science Day 2026 intro («اليوم العالمي للعلوم», Al Risala School): https://science-fair-downloads.vercel.app
+The event was called «معرض العلوم» (Science Fair) until 2026-11-11, which is why the repository and file names still say science-fair.
 
 The page is a single static `index.html` with its images in `assets/`.
 The files it offers are attached to the [latest release](../../releases/latest) (v2.0, light 3D edition):
