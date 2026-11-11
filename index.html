@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>معرض العلوم ٢٠٢٦ · التحميل</title>
+<meta name="description" content="حمّل مقدمة معرض العلوم لمدرسة الرسالة: نسخة ويندوز، تطبيق أندرويد، نسخة المتصفح، وفيديو المقدمة.">
+<meta name="theme-color" content="#030712">
+<meta property="og:title" content="معرض العلوم ٢٠٢٦ · التحميل">
+<meta property="og:description" content="عدّ تنازلي، لحظات من المعرض، وبوابة بصمة تفتح المعرض. حمّلها لجهازك.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&family=Space+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#030712; --bg2:#06101f; --panel:rgba(10,24,44,.62); --line:rgba(62,240,255,.16); --line2:rgba(62,240,255,.32);
+  --cy:#3ef0ff; --tl:#1fffc8; --vi:#8b6bff; --wh:#eefaff; --mut:#9fb6c8; --dim:#6a8296; --amber:#ffb547;
+  --ar:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  --num:'Space Grotesk','Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',Consolas,monospace;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:var(--ar);color:var(--wh);background:var(--bg);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+
+/* ---------- background ---------- */
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.bg .glow{position:absolute;inset:0;background:
+  radial-gradient(50% 45% at 50% 0%,rgba(30,90,140,.38),transparent 70%),
+  radial-gradient(35% 35% at 92% 30%,rgba(139,107,255,.13),transparent 70%),
+  radial-gradient(35% 35% at 5% 80%,rgba(31,255,200,.07),transparent 70%)}
+.bg .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(62,240,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(62,240,255,.045) 1px,transparent 1px);
+  background-size:64px 64px;-webkit-mask-image:radial-gradient(80% 60% at 50% 20%,#000 20%,transparent 80%);mask-image:radial-gradient(80% 60% at 50% 20%,#000 20%,transparent 80%)}
+.bg canvas{position:absolute;inset:0;width:100%;height:100%}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(3,7,18,.6);border-bottom:1px solid rgba(62,240,255,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px}
+.brand img{height:34px;width:auto}
+.brand small{display:block;font-weight:400;font-size:12px;color:var(--mut);line-height:1.2}
+nav ul{display:flex;gap:28px;list-style:none;font-size:15px;color:var(--mut)}
+nav ul a:hover{color:var(--cy)}
+.nav-cta{font-size:14px;font-weight:500;padding:9px 18px;border-radius:999px;border:1px solid var(--line2);color:var(--cy);transition:.2s}
+.nav-cta:hover{background:rgba(62,240,255,.1)}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 48px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--tl);padding:6px 14px;border-radius:999px;background:rgba(31,255,200,.07);border:1px solid rgba(31,255,200,.2)}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--tl);box-shadow:0 0 10px var(--tl);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+h1{font-size:clamp(40px,6vw,72px);line-height:1.15;font-weight:700;margin:22px 0 18px;letter-spacing:-.5px}
+h1 span{background:linear-gradient(100deg,var(--cy),var(--tl) 55%,#b9fff0);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(62,240,255,.25)}
+.lead{font-size:clamp(17px,1.7vw,20px);color:var(--mut);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--ar);font-size:16px;font-weight:500;padding:14px 26px;border-radius:12px;border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:linear-gradient(135deg,var(--cy),var(--tl));color:#02121a;box-shadow:0 8px 30px -8px rgba(62,240,255,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px -8px rgba(62,240,255,.8)}
+.btn-ghost{border-color:var(--line2);color:var(--wh);background:rgba(62,240,255,.04)}
+.btn-ghost:hover{background:rgba(62,240,255,.1);border-color:var(--cy)}
+.stats{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}
+.stat b{display:block;font-family:var(--num);font-weight:500;font-size:28px;color:var(--wh);line-height:1.1}
+.stat span{font-size:13px;color:var(--dim)}
+
+.screen{position:relative;border-radius:14px;padding:10px;background:linear-gradient(180deg,rgba(62,240,255,.12),rgba(62,240,255,.02));border:1px solid var(--line2);box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 60px -10px rgba(62,240,255,.18)}
+.screen video,.screen img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:#000}
+.hud{position:absolute;width:22px;height:22px;border-color:var(--cy);border-style:solid;opacity:.9}
+.hud.tl{top:-6px;left:-6px;border-width:2px 0 0 2px}.hud.tr{top:-6px;right:-6px;border-width:2px 2px 0 0}
+.hud.bl{bottom:-6px;left:-6px;border-width:0 0 2px 2px}.hud.br{bottom:-6px;right:-6px;border-width:0 2px 2px 0}
+.screen .tag{position:absolute;bottom:22px;left:22px;font-size:12px;color:var(--cy);background:rgba(3,7,18,.7);padding:3px 10px;border-radius:6px;border:1px solid var(--line)}
+.screen .tag i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#ff4d6a;margin-left:6px;vertical-align:middle;animation:pulse 1.4s infinite}
+
+/* ---------- sections ---------- */
+section{padding:80px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-head .k{font-size:14px;font-weight:500;color:var(--cy);display:block;margin-bottom:8px}
+h2{font-size:clamp(28px,3.6vw,42px);line-height:1.3;font-weight:700}
+.sec-head p{color:var(--mut);margin-top:12px;font-size:17px}
+
+/* ---------- downloads ---------- */
+.dl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{position:relative;padding:30px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:18px;transition:border-color .25s,transform .25s,box-shadow .25s;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 100% 0%,var(--accent-glow,rgba(62,240,255,.08)),transparent 70%);pointer-events:none}
+.card:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 20px 50px -20px rgba(0,0,0,.7)}
+.card.rec{border-color:rgba(31,255,200,.5);box-shadow:0 0 0 1px rgba(31,255,200,.2),0 20px 60px -25px rgba(31,255,200,.45)}
+.badge{position:absolute;top:22px;left:22px;font-size:12px;font-weight:500;padding:4px 12px;border-radius:999px;background:rgba(31,255,200,.12);color:var(--tl);border:1px solid rgba(31,255,200,.35);display:none}
+.card.rec .badge{display:block}
+.card-top{display:flex;align-items:center;gap:16px;position:relative}
+.ico{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:rgba(62,240,255,.08);border:1px solid var(--line);color:var(--cy);flex:none}
+.ico svg{width:28px;height:28px}
+.card h3{font-size:22px;font-weight:700;line-height:1.3}
+.card .sub{font-size:14px;color:var(--mut)}
+.card p.desc{color:var(--mut);font-size:15.5px;position:relative}
+.meta{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.meta span{font-size:13px;color:var(--mut);padding:4px 11px;border-radius:8px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.meta span.f{font-family:var(--mono);font-size:12px;direction:ltr;color:var(--cy)}
+.card .btn{width:100%;margin-top:auto;position:relative}
+details{position:relative;font-size:14.5px;color:var(--mut);border-top:1px dashed rgba(62,240,255,.14);padding-top:14px}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:var(--wh);font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--num);font-size:20px;color:var(--cy);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details ol{margin:12px 0 0;padding-right:20px;display:grid;gap:6px}
+details ol li::marker{color:var(--cy);font-family:var(--num)}
+.c-win{--accent-glow:rgba(62,240,255,.1)}
+.c-and{--accent-glow:rgba(31,255,200,.09)}.c-and .ico{color:var(--tl);background:rgba(31,255,200,.08);border-color:rgba(31,255,200,.2)}
+.c-web{--accent-glow:rgba(139,107,255,.12)}.c-web .ico{color:#b6a3ff;background:rgba(139,107,255,.1);border-color:rgba(139,107,255,.25)}
+.c-vid{--accent-glow:rgba(255,181,71,.08)}.c-vid .ico{color:var(--amber);background:rgba(255,181,71,.08);border-color:rgba(255,181,71,.22)}
+
+.qr-row{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin-top:22px;padding:24px 30px;border-radius:var(--r);background:var(--panel);border:1px solid var(--line)}
+.qr{width:132px;height:132px;padding:10px;border-radius:12px;background:#fff;display:grid;place-items:center}
+.qr img,.qr canvas{width:112px!important;height:112px!important}
+.qr-row h3{font-size:20px;margin-bottom:4px}
+.qr-row p{color:var(--mut);font-size:15px}
+.qr-row code{font-family:var(--mono);font-size:13px;color:var(--cy);direction:ltr;display:inline-block;margin-top:8px;word-break:break-all}
+
+/* ---------- how it works ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s}
+.step{border-radius:14px;background:var(--panel);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.step img{aspect-ratio:16/9;object-fit:cover;width:100%;border-bottom:1px solid var(--line)}
+.step div{padding:16px 16px 18px}
+.step b{display:flex;align-items:center;gap:10px;font-size:16.5px;margin-bottom:6px}
+.step b::before{counter-increment:s;content:counter(s);font-family:var(--num);font-weight:500;font-size:13px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;color:var(--cy);border:1px solid var(--line2);flex:none}
+.step p{font-size:14px;color:var(--mut);line-height:1.65}
+
+/* ---------- controls ---------- */
+.ctl{display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:start}
+.panel{border-radius:var(--r);background:var(--panel);border:1px solid var(--line);padding:28px 30px}
+.panel h3{font-size:20px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.panel h3 svg{width:22px;height:22px;color:var(--cy)}
+.keys{display:grid;gap:2px}
+.keys div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:15px;color:var(--mut)}
+.keys div:last-child{border-bottom:0}
+kbd{font-family:var(--num);font-size:13px;color:var(--wh);padding:3px 10px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-bottom-width:2px;white-space:nowrap}
+.tips{display:grid;gap:14px;list-style:none}
+.tips li{display:flex;gap:12px;font-size:15px;color:var(--mut)}
+.tips li::before{content:"";flex:none;width:8px;height:8px;margin-top:10px;border-radius:2px;background:var(--tl);box-shadow:0 0 8px var(--tl);transform:rotate(45deg)}
+.tips strong{color:var(--wh);font-weight:500}
+
+/* ---------- footer ---------- */
+footer{padding:56px 0 40px;border-top:1px solid rgba(62,240,255,.08);margin-top:40px}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer img{height:64px;width:auto;opacity:.9}
+footer p{color:var(--dim);font-size:14px}
+footer .motto{font-size:18px;color:var(--wh);font-weight:500}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.eyebrow i,.screen .tag i{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .ctl{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  nav ul{display:none}
+  .hero{padding:40px 0 24px}
+  section{padding:56px 0}
+  .dl-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .card{padding:24px}
+  .qr-row{grid-template-columns:1fr;justify-items:center;text-align:center;padding:24px}
+  .panel{padding:22px}
+  .stats{gap:22px}
+}
+@media (max-width:440px){
+  .steps{grid-template-columns:1fr}
+  .btn{padding:13px 20px}
+  .cta .btn{flex:1 1 100%}
+  .brand small{display:none}
+}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="glow"></div><div class="grid"></div><canvas id="stars"></canvas></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/school-mark.png" alt=""><span>معرض العلوم<small>مدرسة الرسالة · ٢٠٢٦</small></span></a>
+    <ul>
+      <li><a href="#downloads">التحميل</a></li>
+      <li><a href="#how">كيف تعمل</a></li>
+      <li><a href="#guide">دليل التشغيل</a></li>
+    </ul>
+    <a class="nav-cta" href="#downloads">حمّل الآن</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow"><i></i>بوصلتنا العلوم</span>
+      <h1>مقدمة <span>معرض العلوم</span></h1>
+      <p class="lead">عدّ تنازلي من خمسة إلى صفر، تتخلله لقطات من أجمل لحظات المعرض، ثم بوابة بصمة يضع الزائر إصبعه عليها خمس ثوانٍ لتُفتح أبواب المعرض.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#downloads">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          اختر نسختك وحمّلها
+        </a>
+        <a class="btn btn-ghost" href="https://science-fair-intro.vercel.app" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 5v14l11-7z"/></svg>
+          شغّلها الآن في المتصفح
+        </a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>٤</b><span>نسخ جاهزة</span></div>
+        <div class="stat"><b>٥ ← ٠</b><span>عدّ تنازلي</span></div>
+        <div class="stat"><b>٥ ث</b><span>لفتح البوابة</span></div>
+      </div>
+    </div>
+    <div class="screen rv">
+      <span class="hud tl"></span><span class="hud tr"></span><span class="hud bl"></span><span class="hud br"></span>
+      <video src="assets/preview.mp4" poster="assets/standby.webp" autoplay muted loop playsinline preload="metadata" aria-label="لقطة من المقدمة"></video>
+      <span class="tag"><i></i>معاينة</span>
+    </div>
+  </div>
+</header>
+
+<section id="downloads">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="k">التحميل</span>
+      <h2>اختر النسخة المناسبة لجهازك</h2>
+      <p>كل النسخ تعرض المقدمة نفسها. اختر ما يناسب الجهاز الذي سيُعرض عليه المعرض.</p>
+    </div>
+
+    <div class="dl-grid">
+      <article class="card c-win rv" data-os="windows">
+        <span class="badge">مقترح لجهازك</span>
+        <div class="card-top">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10.5 4.4v7.1H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg></div>
+          <div><h3>نسخة ويندوز</h3><div class="sub">للحاسوب وشاشة العرض الرئيسية</div></div>
+        </div>
+        <p class="desc">ملف واحد محمول يعمل بملء الشاشة مع المؤثرات الصوتية الكاملة. انسخه إلى أي حاسوب وشغّله مباشرة، دون تثبيت.</p>
+        <div class="meta"><span class="f">ScienceFairIntro.exe</span><span>١٢٥ ميجابايت</span><span>ويندوز ١٠ أو ١١</span></div>
+        <details>
+          <summary>طريقة التشغيل</summary>
+          <ol>
+            <li>حمّل الملف وانسخه إلى الحاسوب المتصل بشاشة العرض.</li>
+            <li>افتحه بنقرتين، فيعمل مباشرة دون تثبيت.</li>
+            <li>إذا ظهرت رسالة حماية ويندوز، اضغط «مزيد من المعلومات» ثم «تشغيل على أي حال».</li>
+            <li>اضغط مسافة أو المس الشاشة لبدء العد التنازلي.</li>
+          </ol>
+        </details>
+        <a class="btn btn-primary" href="https://github.com/0ceanmind/science-fair-intro/releases/latest/download/ScienceFairIntro.exe" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          تحميل نسخة ويندوز
+        </a>
+      </article>
+
+      <article class="card c-and rv" data-os="android">
+        <span class="badge">مقترح لجهازك</span>
+        <div class="card-top">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48 19.44 6.3a.38.38 0 0 0-.66-.38l-1.86 3.22a11.5 11.5 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></div>
+          <div><h3>تطبيق أندرويد</h3><div class="sub">للأجهزة اللوحية والهواتف</div></div>
+        </div>
+        <p class="desc">تطبيق خفيف يعمل بالوضع الأفقي بملء الشاشة، مع اهتزاز خفيف أثناء مسح البصمة، ويعود إلى البداية تلقائياً بعد دقيقتين دون استخدام.</p>
+        <div class="meta"><span class="f">ScienceFairIntro.apk</span><span>٩٫٧ ميجابايت</span><span>أندرويد ٩ أو أحدث</span></div>
+        <details>
+          <summary>طريقة التثبيت</summary>
+          <ol>
+            <li>افتح هذه الصفحة من الجهاز اللوحي أو الهاتف وحمّل الملف.</li>
+            <li>افتح الملف من التنزيلات، واسمح بتثبيت التطبيقات من هذا المصدر عند الطلب.</li>
+            <li>اضغط «تثبيت»، ثم افتح تطبيق «معرض العلوم».</li>
+          </ol>
+        </details>
+        <a class="btn btn-primary" href="https://github.com/0ceanmind/science-fair-intro/releases/latest/download/ScienceFairIntro.apk" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          تحميل تطبيق أندرويد
+        </a>
+      </article>
+
+      <article class="card c-web rv" data-os="other">
+        <span class="badge">مقترح لجهازك</span>
+        <div class="card-top">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+          <div><h3>نسخة المتصفح</h3><div class="sub">لأي جهاز، دون تحميل</div></div>
+        </div>
+        <p class="desc">افتح الرابط في أي متصفح حديث على حاسوب أو آيباد أو هاتف، وستعمل المقدمة فوراً. مناسبة للتجربة السريعة وللأجهزة التي لا تسمح بتثبيت البرامج.</p>
+        <div class="meta"><span class="f">science-fair-intro.vercel.app</span><span>يحتاج اتصالاً بالإنترنت</span></div>
+        <details>
+          <summary>نصائح للعرض</summary>
+          <ol>
+            <li>اضغط F11 على الحاسوب للعرض بملء الشاشة.</li>
+            <li>على الآيباد، أضف الصفحة إلى الشاشة الرئيسية لتفتح بلا شريط العنوان.</li>
+            <li>ارفع صوت الجهاز قبل البدء لسماع المؤثرات.</li>
+          </ol>
+        </details>
+        <a class="btn btn-ghost" href="https://science-fair-intro.vercel.app" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          فتح نسخة المتصفح
+        </a>
+      </article>
+
+      <article class="card c-vid rv">
+        <span class="badge">مقترح لجهازك</span>
+        <div class="card-top">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg></div>
+          <div><h3>فيديو المقدمة</h3><div class="sub">للشاشات وأجهزة العرض</div></div>
+        </div>
+        <p class="desc">تسجيل كامل للمقدمة بدقة عالية، جاهز للتشغيل على شاشة تلفاز أو جهاز عرض أو للمشاركة، دون الحاجة إلى أي تفاعل.</p>
+        <div class="meta"><span class="f">ScienceFairIntro.mp4</span><span>٤٥ ميجابايت</span><span>1080p · ٥٤ ثانية</span></div>
+        <details>
+          <summary>استخدامات مقترحة</summary>
+          <ol>
+            <li>شغّله من ذاكرة USB مباشرة على أغلب أجهزة التلفاز الذكية.</li>
+            <li>اعرضه في الإذاعة المدرسية أو في بداية حفل الافتتاح.</li>
+            <li>شاركه مع أولياء الأمور عبر مجموعات المدرسة.</li>
+          </ol>
+        </details>
+        <a class="btn btn-ghost" href="https://github.com/0ceanmind/science-fair-intro/releases/latest/download/ScienceFairIntro.mp4" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          تحميل الفيديو
+        </a>
+      </article>
+    </div>
+
+    <div class="qr-row rv">
+      <div class="qr" id="qr" aria-label="رمز QR لهذه الصفحة"></div>
+      <div>
+        <h3>تحميل على جهاز آخر؟</h3>
+        <p>امسح الرمز بكاميرا الجهاز اللوحي أو الهاتف لتفتح هذه الصفحة عليه مباشرة، ثم اختر تطبيق أندرويد.</p>
+        <code id="page-url"></code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="k">مراحل المقدمة</span>
+      <h2>من العدّ التنازلي إلى الافتتاح</h2>
+      <p>تجربة قصيرة تقارب الدقيقة، تجمع المؤثرات البصرية والصوتية مع لقطات حقيقية من المعرض.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><img src="assets/standby.webp" alt="شاشة البداية" loading="lazy"><div><b>شاشة البداية</b><p>شعار المدرسة واسم المعرض، تنتظر لمسة أو ضغطة لتبدأ.</p></div></div>
+      <div class="step rv"><img src="assets/countdown.webp" alt="العد التنازلي" loading="lazy"><div><b>العدّ التنازلي</b><p>كل رقم من خمسة إلى واحد يظهر مع ذرة متوهجة ونبضة صوتية.</p></div></div>
+      <div class="step rv"><img src="assets/moment.webp" alt="لحظات من المعرض" loading="lazy"><div><b>لحظات من المعرض</b><p>بعد كل رقم مقطع قصير: الروبوتات، التجارب، الاكتشاف، روح الفريق، والفرحة.</p></div></div>
+      <div class="step rv"><img src="assets/scan.webp" alt="بوابة البصمة" loading="lazy"><div><b>بوابة البصمة</b><p>يتحول الصفر إلى بصمة، ويضع الزائر إصبعه عليها خمس ثوانٍ حتى يكتمل المسح.</p></div></div>
+      <div class="step rv"><img src="assets/welcome.webp" alt="شاشة الترحيب" loading="lazy"><div><b>أهلاً بكم</b><p>تُفتح البوابة وتظهر رسالة الترحيب بمعرض العلوم.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="k">يوم المعرض</span>
+      <h2>دليل التشغيل يوم المعرض</h2>
+    </div>
+    <div class="ctl">
+      <div class="panel rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg>أزرار التحكم في نسخة ويندوز</h3>
+        <div class="keys">
+          <div><span>بدء العدّ التنازلي</span><kbd>مسافة · Enter · لمس</kbd></div>
+          <div><span>مسح البصمة لمدة ٥ ثوانٍ</span><kbd>ضغط مستمر على البصمة</kbd></div>
+          <div><span>بديل البصمة أثناء التدريب</span><kbd>ضغط مستمر على مسافة</kbd></div>
+          <div><span>العودة إلى شاشة البداية</span><kbd>R</kbd></div>
+          <div><span>تبديل ملء الشاشة</span><kbd>F11</kbd></div>
+          <div><span>الخروج</span><kbd>Esc</kbd></div>
+        </div>
+      </div>
+      <div class="panel rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z"/></svg>نصائح قبل الافتتاح</h3>
+        <ul class="tips">
+          <li><span><strong>جرّبها مرة كاملة</strong> على الجهاز نفسه قبل الحفل، مع السماعات أو مكبر الصوت.</span></li>
+          <li><span><strong>انسخ نسخة ويندوز مسبقاً</strong> إلى الحاسوب، فلا تحتاج إلى إنترنت أثناء العرض.</span></li>
+          <li><span><strong>إذا رفع الزائر إصبعه مبكراً</strong> يتراجع المسح تدريجياً، فيعيد وضع إصبعه ويكمل.</span></li>
+          <li><span><strong>احتفظ بالفيديو احتياطياً</strong> على ذاكرة USB، فيعمل على أي شاشة إذا تعذّر تشغيل البرنامج.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/school-logo.png" alt="مدرسة الرسالة">
+    <div>
+      <p class="motto">بوصلتنا العلوم</p>
+      <p>معرض العلوم ٢٠٢٦ · مدرسة الرسالة (١–٨)</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// Recommend the right download for the visitor's device.
+(function () {
+  var ua = navigator.userAgent || '';
+  var os = /Android/i.test(ua) ? 'android'
+         : /Windows/i.test(ua) ? 'windows'
+         : (/iPhone|iPad|iPod|Macintosh|CrOS|Linux/i.test(ua)) ? 'other' : '';
+  if (!os) return;
+  var card = document.querySelector('.card[data-os="' + os + '"]');
+  if (card) {
+    card.classList.add('rec');
+    if (os !== 'windows') card.parentNode.insertBefore(card, card.parentNode.firstChild);
+  }
+})();
+
+// QR code that opens this page on another device.
+(function () {
+  var url = location.href.split('#')[0];
+  var el = document.getElementById('page-url');
+  el.textContent = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+  try {
+    new QRCode(document.getElementById('qr'), { text: url, width: 224, height: 224, colorDark: '#030712', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
+  } catch (e) { document.querySelector('.qr-row').style.display = 'none'; }
+})();
+
+// Reveal on scroll.
+(function () {
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (e) { io.observe(e); });
+})();
+
+// Slow drifting star field behind the page.
+(function () {
+  var c = document.getElementById('stars'), x = c.getContext('2d'), w, h, dpr, pts = [];
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size() {
+    dpr = Math.min(devicePixelRatio || 1, 2); w = innerWidth; h = innerHeight;
+    c.width = w * dpr; c.height = h * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.round(w * h / 9000); pts = [];
+    for (var i = 0; i < n; i++) pts.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 1.2 + .2, v: Math.random() * .15 + .03, a: Math.random() * .6 + .2, p: Math.random() * 6.28 });
+  }
+  function draw(t) {
+    x.clearRect(0, 0, w, h);
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      if (!still) { p.y -= p.v; if (p.y < -2) { p.y = h + 2; p.x = Math.random() * w; } }
+      x.globalAlpha = p.a * (.6 + .4 * Math.sin(t / 900 + p.p));
+      x.fillStyle = i % 7 ? '#9fe9ff' : '#1fffc8';
+      x.beginPath(); x.arc(p.x, p.y, p.r, 0, 6.283); x.fill();
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+  size(); addEventListener('resize', size); requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
