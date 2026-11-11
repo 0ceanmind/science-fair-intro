@@ -574,7 +574,7 @@ footer .credit strong{font-weight:600;background:linear-gradient(270deg,var(--c1
 
 // QR code that opens this page on another device.
 (function () {
-  var url = location.href.split('#')[0];
+  var url = location.origin + location.pathname;
   document.getElementById('page-url').textContent = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
   try {
     new QRCode(document.getElementById('qr'), { text: url, width: 220, height: 220, colorDark: '#0E1B3D', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
